@@ -573,13 +573,16 @@ there.
 /* Bigger than 1000 */
 @media (min-width: 1000px) {
   .section {
-    padding: 12rem 0;
+    padding: 8rem 0;
   }
   .hero {
-    padding: 12rem 0 20rem;
+    padding: 8rem 0 20rem;
   }
   .hero-heading {
     font-size: 3.0rem;
+  }
+  .onigiris {
+    margin-top: 3rem;
   }
   .onigiri {
     top: -8rem;
@@ -590,6 +593,12 @@ there.
     max-height: 570px;
   }
   .lighten-the-load {
+    padding-bottom: 6rem;
+  }
+  .try-onigiri {
+    padding: 2rem 0 6rem;
+  }
+  .values {
     padding-bottom: 6rem;
   }
 }
