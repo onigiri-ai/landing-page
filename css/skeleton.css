@@ -577,7 +577,7 @@ there.
     padding: 8rem 0;
   }
   .hero {
-    padding: 16rem 0 20rem;
+    padding: 12rem 0 20rem;
   }
   .hero-heading {
     font-size: 3.0rem;
@@ -624,10 +624,17 @@ there.
   align-items: center;
   box-sizing: border-box;
   color: white;
+  padding: .6rem 2rem;
+  height: 50px;
 }
 
 .top-menu .logo {
   height: 100%;
+}
+
+.top-menu .name {
+  font-size: 2rem;
+  padding: 0 1rem;
 }
 
 .top-menu .login {
@@ -639,6 +646,11 @@ there.
 .top-menu .signup {
   color: white;
   text-decoration: none;
+  margin-left: auto;
+  font-size: 1.6rem;
+  padding: 0 1rem;
+  border-radius: 8px;
+  border: 2px solid white;
 }
 
 .top-menu .login:hover, .top-menu .login:focus {
@@ -650,30 +662,6 @@ there.
   background-color: #EDE9FE;
   color: #4C1D95;
   border-color: #4C1D95;
-}
-
-@media (min-width: 400px) {
-  .top-menu {
-    padding: .6rem 2rem;
-    height: 50px;
-  }
-
-  .top-menu .name {
-    font-size: 2rem;
-    padding: 0 1rem;
-  }
-
-  .top-menu .login {
-    display: none;
-  }
-
-  .top-menu .signup {
-    margin-left: auto;
-    font-size: 1.6rem;
-    padding: 0 1rem;
-    border-radius: 8px;
-    border: 2px solid white;
-  }
 }
 
 @media (min-width: 1000px) {
@@ -707,10 +695,18 @@ there.
     border-radius: 8px;
     border: 2px solid white;
   }
+
+  .first-cta {
+    margin-top: 2rem;
+  }
 }
 
 .preview-onigiri {
   width: 100%;
+}
+
+.first-cta {
+  margin-bottom: 2rem;
 }
 
 .pantone-2340-c {
