@@ -652,6 +652,10 @@ there.
   text-decoration: none;
 }
 
+.preview-onigiri {
+  width: 100%;
+}
+
 .pantone-2340-c {
   color: #CF6F77;
 }
