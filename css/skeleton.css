@@ -607,49 +607,106 @@ there.
 
 /* Custom Styles
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+* {
+  transition: all 200ms;
+}
+
+/* Top Menu
+ * ---------- */
 .top-menu {
   position: fixed;
-  padding: 0 4rem;
-  height: 64px;
-  width: 100%;
   background-color: #4C1D95;
+  width: 100%;
   z-index: 1;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: flex-start;
-  color: white;
   box-sizing: border-box;
+  color: white;
 }
 
 .top-menu .logo {
-  height: 50px;
-}
-
-.top-menu .name {
-  padding: 0 2rem;
-  font-size: 4rem;
-}
-
-.top-menu .tagline {
-  font-size: 2rem;
-}
-
-.top-menu .signup {
-  margin-left: auto;
-  font-size: 3rem;
-  padding: 0 2rem;
-  border-radius: 8px;
-  border: 2px solid white;
-  color: white;
-  text-decoration: none;
+  height: 100%;
 }
 
 .top-menu .login {
-  margin-left: 2rem;
-  font-size: 3rem;
+  margin-left: auto;
   color: white;
   text-decoration: none;
+}
+
+.top-menu .signup {
+  color: white;
+  text-decoration: none;
+}
+
+.top-menu .login:hover, .top-menu .login:focus {
+  background-color: #EDE9FE;
+  color: #4C1D95;
+}
+
+.top-menu .signup:hover, .top-menu .signup:focus {
+  background-color: #EDE9FE;
+  color: #4C1D95;
+  border-color: #4C1D95;
+}
+
+@media (min-width: 400px) {
+  .top-menu {
+    padding: .6rem 2rem;
+    height: 50px;
+  }
+
+  .top-menu .name {
+    font-size: 2rem;
+    padding: 0 1rem;
+  }
+
+  .top-menu .login {
+    display: none;
+  }
+
+  .top-menu .signup {
+    margin-left: auto;
+    font-size: 1.6rem;
+    padding: 0 1rem;
+    border-radius: 8px;
+    border: 2px solid white;
+  }
+}
+
+@media (min-width: 1000px) {
+  .top-menu {
+    padding: 1rem 4rem;
+    height: 64px;
+  }
+
+  .top-menu .name {
+    padding: 0 2rem;
+    font-size: 4rem;
+  }
+
+  .top-menu .tagline {
+    font-size: 2rem;
+  }
+
+  .top-menu .login {
+    display: block;
+    margin-right: 2rem;
+    font-size: 2rem;
+    font-weight: bold;
+    border-radius: 8px;
+    padding: .5rem 2rem;
+  }
+
+  .top-menu .signup {
+    margin-left: 0;
+    font-size: 2.5rem;
+    padding: 0 2rem;
+    border-radius: 8px;
+    border: 2px solid white;
+  }
 }
 
 .preview-onigiri {
