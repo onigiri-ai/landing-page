@@ -211,7 +211,7 @@ input[type="submit"].button-primary,
 input[type="reset"].button-primary,
 input[type="button"].button-primary {
   color: #fff;
-  background-color: #cf6f77;
+  background-color: #4C1D95;
   border-color: #cf6f77; }
 .button.button-primary:hover,
 button.button-primary:hover,
@@ -224,8 +224,8 @@ input[type="submit"].button-primary:focus,
 input[type="reset"].button-primary:focus,
 input[type="button"].button-primary:focus {
   color: #FFF;
-  background-color: #B6565E;
-  border-color: #B6565E; }
+  background-color: #7C3AED;
+  border-color: #7C3AED; }
 
 
 /* Forms
@@ -456,7 +456,8 @@ there.
 /* Values
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .values {
-  background-image: url('../images/onigiri-pattern.jpg');
+  /*background-image: url('../images/onigiri-pattern.jpg');*/
+  background-color: #4C1D95;
   background-size: repeat;
   color: #fff;
   padding-bottom: 5rem;
@@ -576,7 +577,7 @@ there.
     padding: 8rem 0;
   }
   .hero {
-    padding: 8rem 0 20rem;
+    padding: 16rem 0 20rem;
   }
   .hero-heading {
     font-size: 3.0rem;
@@ -606,8 +607,57 @@ there.
 
 /* Custom Styles
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+.top-menu {
+  position: fixed;
+  padding: 0 4rem;
+  height: 64px;
+  width: 100%;
+  background-color: #4C1D95;
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  color: white;
+  box-sizing: border-box;
+}
+
+.top-menu .logo {
+  height: 50px;
+}
+
+.top-menu .name {
+  padding: 0 2rem;
+  font-size: 4rem;
+}
+
+.top-menu .tagline {
+  font-size: 2rem;
+}
+
+.top-menu .signup {
+  margin-left: auto;
+  font-size: 3rem;
+  padding: 0 2rem;
+  border-radius: 8px;
+  border: 2px solid white;
+  color: white;
+  text-decoration: none;
+}
+
+.top-menu .login {
+  margin-left: 2rem;
+  font-size: 3rem;
+  color: white;
+  text-decoration: none;
+}
+
 .pantone-2340-c {
   color: #CF6F77;
+}
+
+.purple-900 {
+  color: #4C1D95;
 }
 
 .section.inquiring-minds {
@@ -622,6 +672,7 @@ there.
 .inquiring-minds p, .inquiring-minds h5 {
   text-align: left;
 }
+
 .inquiring-minds h5 {
   font-weight: 400;
 }
