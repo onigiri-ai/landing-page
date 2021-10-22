@@ -441,17 +441,6 @@ there.
 
 /* Hero
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.onigiris {
-  position: relative;
-}
-.onigiri {
-  position: relative;
-  max-width: 80%;
-  margin: 3rem auto -12rem;
-}
-.onigiri + .onigiri {
-  display: none;
-}
 
 /* Values
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -641,10 +630,12 @@ there.
   margin-left: auto;
   color: white;
   text-decoration: none;
+  display: none;
 }
 
 .top-menu .signup {
   color: white;
+  display: none;
   text-decoration: none;
   margin-left: auto;
   font-size: 1.6rem;
@@ -662,6 +653,12 @@ there.
   background-color: #EDE9FE;
   color: #4C1D95;
   border-color: #4C1D95;
+}
+
+@media (min-width: 426px) {
+  .top-menu .signup {
+    display: block;
+  }
 }
 
 @media (min-width: 1000px) {
