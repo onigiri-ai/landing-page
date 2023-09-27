@@ -758,3 +758,12 @@ there.
   text-decoration: none;
   color: #333;
 }
+
+.information {
+  margin-bottom: -3rem;
+  padding-bottom: 0rem;
+}
+
+.information p {
+  margin-bottom: 0;
+}
