@@ -85,8 +85,10 @@ a { color: var(--accent); text-decoration: none; }
 .hero.touch { cursor: auto; }
 /* Wisp stands in for the pointer here, so the words never get selected by a click meant for the lantern. */
 .hero, .hero * { -webkit-user-select: none; user-select: none; }
-.hero a, .hero .hero-copy, .hero .hero-copy * { cursor: none; }
-.hero.touch a, .hero.touch .hero-copy, .hero.touch .hero-copy * { cursor: auto; }
+.hero .hero-copy, .hero .hero-copy * { cursor: none; }
+.hero.touch .hero-copy, .hero.touch .hero-copy * { cursor: auto; }
+/* Over a button or a link the real pointer comes back, so it reads as something to press. */
+.hero .hero-copy a, .hero .hero-copy a *, .hero .hero-copy button, .hero .hero-copy button * { cursor: pointer; }
 /* Everything that moves each frame moves by transform only, on its own layer: no repaint, no style recalculation. */
 .scene { position: absolute; inset: 0; z-index: -2; overflow: hidden; }
 .scene img.layer { position: absolute; left: 0; top: 0; width: 100%; height: 100%; object-fit: cover; object-position: 62% 50%; }
