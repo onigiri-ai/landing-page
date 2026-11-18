@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="102.4 102.4 819.2 819.2" role="img" aria-label="onigiri.ai">
+  <defs><linearGradient id="logo-tile" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#24262e"/><stop offset="1" stop-color="#21232a"/></linearGradient></defs>
+  <rect x="102.4" y="102.4" width="819.2" height="819.2" rx="189.44" fill="url(#logo-tile)"/>
+  <circle cx="450.56" cy="512" r="156.16" fill="none" stroke="#e6e7eb" stroke-width="76.8"/>
+  <circle cx="721.92" cy="655.36" r="63.488" fill="#8ab4ff"/>
+</svg>

@@ -1,183 +1,307 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-GB">
 <head>
-
-  <!-- Basic Page Needs
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
-  <title>Onigiri | Find & Connect to VCs</title>
-  <meta name="description" content="Close your fundraising round easier by finding & connecting to value-aligned VCs.">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Onigiri Studio | Make your game with AI</title>
+  <meta name="description" content="Onigiri Studio is a game studio on your desktop. Tell it your idea, plan it with an AI partner and play the first version on your computer or your phone.">
+  <meta name="theme-color" content="#0f1014">
+  <meta name="color-scheme" content="dark">
+  <link rel="canonical" href="https://onigiri.ai/">
 
-  <!-- Facebook Meta Tags -->
-  <meta property="og:url" content="https://beta.onigiri.ai">
+  <meta property="og:url" content="https://onigiri.ai/">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Onigiri | Find & Connect to VCs">
-  <meta property="og:description" content="Close your fundraising round easier by finding & connecting to value-aligned VCs.">
-  <meta property="og:image" content="https://beta.onigiri.ai/images/onigiri-opengraph.png">
-
-  <!-- Twitter Meta Tags -->
+  <meta property="og:site_name" content="onigiri.ai">
+  <meta property="og:title" content="Onigiri Studio | Make your game with AI">
+  <meta property="og:description" content="Tell it your idea, plan it with an AI partner and play the first version on your computer or your phone.">
+  <meta property="og:image" content="https://onigiri.ai/images/og.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
-  <meta property="twitter:domain" content="onigiri.ai">
-  <meta property="twitter:url" content="https://beta.onigiri.ai">
-  <meta name="twitter:title" content="Onigiri | Find & Connect to VCs">
-  <meta name="twitter:description" content="Close your fundraising round easier by finding & connecting to value-aligned VCs.">
-  <meta name="twitter:image" content="https://beta.onigiri.ai/images/onigiri-opengraph.png">
+  <meta name="twitter:title" content="Onigiri Studio | Make your game with AI">
+  <meta name="twitter:description" content="Tell it your idea, plan it with an AI partner and play the first version on your computer or your phone.">
+  <meta name="twitter:image" content="https://onigiri.ai/images/og.jpg">
 
-  <!-- Mobile Specific Metas
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!-- FONT
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href='//fonts.googleapis.com/css?family=Raleway:400,300,600&display=swap' rel='stylesheet' type='text/css'>
-
-  <!-- CSS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/skeleton.css">
-
-  <!-- Scripts
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
-
-  <!-- Favicon
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href="favicons/favicon.ico">
-  <link rel="apple-touch-icon" sizes="57x57" href="favicons/apple-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="favicons/apple-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="favicons/apple-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="favicons/apple-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="favicons/apple-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="favicons/apple-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="favicons/apple-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="favicons/apple-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-icon-180x180.png">
-  <link rel="icon" type="image/png" sizes="192x192"  href="favicons/android-icon-192x192.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="favicons/favicon-96x96.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+  <link rel="icon" href="favicons/favicon.ico" sizes="32x32">
+  <link rel="icon" href="favicons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicons/apple-touch-icon.png">
   <link rel="manifest" href="favicons/manifest.json">
-  <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="msapplication-TileImage" content="favicons/ms-icon-144x144.png">
-  <meta name="theme-color" content="#ffffff">
-
+  <link rel="preload" href="fonts/bricolage-grotesque/bricolage-grotesque-latin-opsz-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/inter/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" as="image" href="images/game/street.webp">
+  <link rel="stylesheet" href="css/site.css">
+  <script src="js/site.js" defer></script>
 </head>
 <body>
-  <div class="top-menu">
-    <img class="logo" src="images/onigiri-logo.png">
-    <span class="name">Onigiri</span>
-    <span class="tagline">Find &amp; Connect to VCs</span>
-    <!-- <a href="https://beta.app.onigiri.ai" class="login">Login</a>
-    <a href="https://beta.app.onigiri.ai/?defaultToSignUp=true" class="signup">Join the Beta</a> -->
-  </div>
 
-  <div class="section information">
-    <div class="container" style="padding: 1em; border-radius: 1em; background-color: #fde68a">
-      <div class="row">
-        <p style="color: red">As of <strong>February 28, 2022</strong>, Onigiri.ai is no longer accepting new signups.<br/>Existing users will continue to have access to the Onigiri.ai platform.</p>
-      </div>
+  <header class="top">
+    <div class="wrap">
+      <a class="brand" href="/" aria-label="onigiri.ai home"><img src="images/logo.svg" alt="" width="32" height="32">onigiri.ai</a>
+      <nav class="nav" aria-label="Main">
+        <a href="#how">How it works</a>
+        <a href="#features">Features</a>
+        <a href="#questions">Questions</a>
+      </nav>
+      <a class="btn btn-primary btn-sm" href="#download">Download</a>
     </div>
-  </div>
+  </header>
 
-  <div class="section hero">
-    <div class="container">
-      <div class="row">
-        <div class="one-half column">
-          <h4 class="hero-heading">A less painful way to find and connect to VCs that are <br/><strong class="purple-900">aligned with your vision</strong>.</h4>
-          <div class="row">
-            <div class="column">
-              <h5>Onigiri will support you with 1-on-1 fundraising coaching along the way!<!--Let Onigiri help you recover the most important founder resource: <em>Time</em>.--></h5>
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="scene" aria-hidden="true">
+        <img class="layer dark" src="images/game/street.webp" alt="" width="2064" height="1152">
+        <div class="beam"><img class="layer lit" src="images/game/street.webp" alt="" width="2064" height="1152"></div>
+        <div class="glow"></div>
+        <canvas></canvas>
+      </div>
+      <div class="wisp" role="button" tabindex="0" aria-label="Wisp the lantern ghost. Press to make Wisp smile.">
+        <div class="body"><img src="images/game/wisp.webp" alt="" width="512" height="512"></div>
+      </div>
+      <div class="hero-shade"></div>
+
+      <div class="wrap hero-copy">
+        <span class="eyebrow rise" style="--i:0"><span class="dot"></span>Onigiri Studio 0.13.2 is out</span>
+        <h1 id="hero-title" class="rise" style="--i:1">Make the game you keep <span class="warm">thinking about.</span></h1>
+        <p class="lede rise" style="--i:2">A game studio on your desktop. Tell it your idea, plan it with an AI partner and play the first version on your computer or your phone. Then keep asking for changes until it feels right.</p>
+        <div class="cta rise" style="--i:3">
+          <a class="btn btn-warm" data-download-main href="https://github.com/onigiri-ai/onigiri.ai/releases/latest"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg> Download Onigiri Studio</a>
+          <a class="btn" href="#how">See how it works</a>
+        </div>
+        <p class="cta-note rise" style="--i:4">For macOS, Windows and Linux</p>
+      </div>
+
+      <div class="wrap hero-foot">
+        <span class="hero-hint"><span class="ring"></span>Move to carry the lantern. Tap Wisp to smile.</span>
+        <span class="hero-credit"><strong>Wisp's Noodle Stall</strong>, planned and drawn in Onigiri Studio</span>
+      </div>
+    </section>
+
+    <section class="block cast" aria-labelledby="cast-title">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div class="kicker">Made in the studio</div>
+          <h2 id="cast-title">One idea. One evening. A whole cast.</h2>
+          <p>Every picture on this page, from the rainy street to the regulars at the counter, came out of one short planning chat in Onigiri Studio.</p>
+        </div>
+        <div class="cast-grid">
+          <article class="cast-card reveal" style="--d:0">
+            <div class="portrait"><img src="images/game/cast-wisp.webp" alt="Wisp, a small round glowing ghost holding a paper lantern" width="640" height="640" loading="lazy"></div>
+            <h3>Wisp</h3>
+            <p class="role">The cook</p>
+            <p>A tiny lantern ghost who runs the noodle stall, one busy night at a time.</p>
+          </article>
+          <article class="cast-card reveal" style="--d:1">
+            <div class="portrait"><img src="images/game/cast-troll.webp" alt="A mossy forest troll with ferns growing on his shoulders" width="640" height="640" loading="lazy"></div>
+            <h3>Mossy forest troll</h3>
+            <p class="role">A regular</p>
+            <p>Big, slow and always hungry for a second bowl.</p>
+          </article>
+          <article class="cast-card reveal" style="--d:2">
+            <div class="portrait"><img src="images/game/cast-cat.webp" alt="A sleepy cat spirit with three flame-like tails" width="640" height="640" loading="lazy"></div>
+            <h3>Sleepy cat spirit</h3>
+            <p class="role">A regular</p>
+            <p>Three tails, one nap and a strong opinion about toppings.</p>
+          </article>
+          <article class="cast-card reveal" style="--d:3">
+            <div class="portrait"><img src="images/game/cast-octopus.webp" alt="A tiny octopus in a yellow raincoat holding an umbrella" width="640" height="640" loading="lazy"></div>
+            <h3>Tiny octopus</h3>
+            <p class="role">A regular</p>
+            <p>Comes in from the rain with eight arms and a very small umbrella.</p>
+          </article>
+        </div>
+        <p class="cast-note reveal">Drawn by Nano Banana 2.1 in the studio's plan room. The plan and the code were written with Gemini 4 Argon.</p>
+      </div>
+    </section>
+
+    <section id="how" class="block story" aria-labelledby="how-title">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div class="kicker">How it works</div>
+          <h2 id="how-title">From one line to a game you can play</h2>
+          <p>You bring the idea and the taste. The studio does the planning, the drawing, the code and the checks. It asks you whenever a choice is yours to make.</p>
+        </div>
+        <div class="story-grid">
+          <div class="story-steps">
+            <article class="story-step" data-label="Start a new game">
+              <span class="step-num">1</span>
+              <h3>Start with what you have</h3>
+              <p>A sentence, a mood, a game you love or a sketch. Type it in or add a picture. That is enough to begin.</p>
+              <img class="step-shot frame" src="images/studio/start.webp" width="1600" height="1000" loading="lazy" alt="The start screen with the noodle stall idea typed in.">
+            </article>
+            <article class="story-step" data-label="The plan room">
+              <span class="step-num">2</span>
+              <h3>Plan it together</h3>
+              <p>The planning partner asks good questions and writes the plan beside you. Your own words stay yours. It only suggests, and you keep, change or turn down each idea.</p>
+              <ul>
+                <li>Draw rough or finished pictures of the look and every character</li>
+                <li>Star the ones you like and the studio builds from them</li>
+                <li>Leave and come back later. Your plan waits for you.</li>
+              </ul>
+              <img class="step-shot frame" src="images/studio/plan-room.webp" width="2880" height="1800" loading="lazy" alt="The plan room: the plan on the left, starred pictures of the stall and the characters in the middle and the planning chat on the right.">
+            </article>
+            <article class="story-step" data-label="Build my first version">
+              <span class="step-num">3</span>
+              <h3>Say when you are ready</h3>
+              <p>Pick a name, the devices it runs on and how people play it. You see what the first version should cost before anything starts.</p>
+              <img class="step-shot frame" src="images/studio/ready.webp" width="1516" height="947" loading="lazy" alt="The Build my first version sheet with the name, devices, controls and the pictures that carry over.">
+            </article>
+            <article class="story-step" data-label="Building the first version">
+              <span class="step-num">4</span>
+              <h3>Watch it come together</h3>
+              <p>The studio draws the art, writes the code and checks that your game runs. You don't have to worry about anything to do with builds.</p>
+              <ul>
+                <li>Pick a picture to point the agent at it</li>
+                <li>See what it has cost so far, as it builds</li>
+              </ul>
+              <img class="step-shot frame" src="images/studio/journey.webp" width="2160" height="1350" loading="lazy" alt="The studio drawing the key art and the characters while the agent builds the first version.">
+            </article>
+            <article class="story-step" data-label="Try your game">
+              <span class="step-num">5</span>
+              <h3>Play it</h3>
+              <p>Try the first version right in the studio or on your phone. Then ask for the next change in plain words.</p>
+              <img class="step-shot frame" src="images/studio/play.webp" width="2000" height="1250" loading="lazy" alt="Wisp's Noodle Stall running inside the studio.">
+            </article>
+          </div>
+          <div class="story-stage" aria-hidden="true">
+            <div class="stage-sticky">
+              <div class="frame">
+                <div class="bar"><i></i><i></i><i></i><span>Start a new game</span></div>
+                <div class="stage-shots">
+                  <img src="images/studio/start.webp" alt="" width="1600" height="1000">
+                  <img src="images/studio/plan-room.webp" alt="" width="2880" height="1800" loading="lazy">
+                  <img src="images/studio/ready.webp" alt="" width="1516" height="947" loading="lazy">
+                  <img src="images/studio/journey.webp" alt="" width="2160" height="1350" loading="lazy">
+                  <img src="images/studio/play.webp" alt="" width="2000" height="1250" loading="lazy">
+                </div>
+              </div>
+              <div class="stage-dots"><i></i><i></i><i></i><i></i><i></i></div>
             </div>
           </div>
-          <div class="row join-beta">
-            <div class="offset-by-one column">
-              <!-- <a class="button button-primary large first-cta" href="https://beta.app.onigiri.ai/?defaultToSignUp=true">Join the Beta</a> -->
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="block" aria-labelledby="features-title">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div class="kicker">Keep building</div>
+          <h2 id="features-title">A whole studio, not a single prompt</h2>
+          <p>The first version is only the start. Ask for changes in plain words and the studio keeps the game on track.</p>
+        </div>
+        <div class="bento">
+          <div class="tile wide reveal">
+            <div>
+              <h3>Every change is an ask</h3>
+              <p>Ask for anything in plain words. Each ask joins a queue you can watch, reorder or stop. You try each change and keep only what you like.</p>
             </div>
+            <div class="shot"><img src="images/studio/agents.webp" width="2880" height="1120" loading="lazy" alt="The Agents queue with asks working, waiting and done, each with its time, model and a Stop button."></div>
+          </div>
+          <div class="tile reveal" style="--d:1">
+            <h3>Rules that keep it on track</h3>
+            <p>The studio writes down how your game plays, how it looks and how it is built. Every agent reads those rules before it changes a thing.</p>
+            <div class="shot"><img src="images/studio/rules.webp" width="1788" height="1290" loading="lazy" alt="The Rules section with Gameplay, Art Direction and Engine tabs."></div>
+          </div>
+          <div class="tile reveal" style="--d:2">
+            <h3>Play it anywhere</h3>
+            <p>Build for the web, Android, iOS, macOS, Windows and Linux from one place. The studio tells you what each one needs and fetches the tools.</p>
+            <div class="shot"><img src="images/studio/builds.webp" width="1788" height="820" loading="lazy" alt="The Builds section listing web, Android, iOS, macOS, Windows and Linux."></div>
+          </div>
+          <div class="tile third reveal">
+            <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9 7 7M17 17l2.1 2.1M4.9 19.1 7 17M17 7l2.1-2.1"/></svg></div>
+            <h3>Your choice of models</h3>
+            <p>Connect Anthropic, OpenAI or Google once. Pick the model and the effort for each job.</p>
+          </div>
+          <div class="tile third reveal" style="--d:1">
+            <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2v20"/><path d="M17 6H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+            <h3>Know what it costs</h3>
+            <p>Every call is counted. You see what a step should cost before it starts.</p>
+          </div>
+          <div class="tile third reveal" style="--d:2">
+            <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg></div>
+            <h3>Your game, your files</h3>
+            <p>Each game is a normal folder on your computer with its whole history kept in git.</p>
           </div>
         </div>
-        <div class="one-half column onigiris">
-          <img alt="Preview of Onigiri Recommendations" class="preview-onigiri" src="images/preview.png"/>
+      </div>
+    </section>
+
+    <section id="download" class="block download" aria-labelledby="download-title">
+      <div class="download-art" aria-hidden="true"><img src="images/game/stall.webp" alt="" width="1376" height="768" loading="lazy"></div>
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div class="kicker">Download</div>
+          <h2 id="download-title">The game in your head is waiting</h2>
+          <p>Onigiri Studio 0.13.2. Connect your own Anthropic, OpenAI or Google account and pay your provider for what you use.</p>
+        </div>
+        <div class="platforms">
+          <div class="platform reveal" data-os="macos">
+            <span class="yours-tag">Your system</span>
+            <h3>macOS</h3>
+            <p>For Macs with Apple silicon. A disk image or a zip.</p>
+            <a class="btn btn-warm" href="https://github.com/onigiri-ai/onigiri.ai/releases/latest">Download for macOS</a>
+          </div>
+          <div class="platform reveal" data-os="windows" style="--d:1">
+            <span class="yours-tag">Your system</span>
+            <h3>Windows</h3>
+            <p>For 64-bit Windows. An installer or a portable app.</p>
+            <a class="btn btn-warm" href="https://github.com/onigiri-ai/onigiri.ai/releases/latest">Download for Windows</a>
+          </div>
+          <div class="platform reveal" data-os="linux" style="--d:2">
+            <span class="yours-tag">Your system</span>
+            <h3>Linux</h3>
+            <p>For 64-bit Linux. An AppImage or a .deb package.</p>
+            <a class="btn btn-warm" href="https://github.com/onigiri-ai/onigiri.ai/releases/latest">Download for Linux</a>
+          </div>
+        </div>
+        <p class="fine"><a href="https://github.com/onigiri-ai/onigiri.ai/releases">Every release and what changed</a></p>
+      </div>
+    </section>
+
+    <section id="questions" class="block" aria-labelledby="questions-title">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div class="kicker">Questions</div>
+          <h2 id="questions-title">Good to know</h2>
+        </div>
+        <div class="faq reveal">
+          <details>
+            <summary>Do I need to know how to code?<span class="pm"></span></summary>
+            <div class="answer"><div><p>No. You describe what you want and pick from what the studio shows you. If you do code, every game is a normal project you can open in your own editor.</p></div></div>
+          </details>
+          <details>
+            <summary>What do I need to get started?<span class="pm"></span></summary>
+            <div class="answer"><div><p>A computer running macOS, Windows or Linux and an account with Anthropic, OpenAI or Google for the models. The studio fetches everything else it needs.</p></div></div>
+          </details>
+          <details>
+            <summary>What kind of games can I make?<span class="pm"></span></summary>
+            <div class="answer"><div><p>2D games and simple 3D games for phones, tablets and computers, played with touch, a keyboard and mouse or a controller. Games are made with the LittleJS engine, which draws in 2D and in 3D. More engines are on the way.</p></div></div>
+          </details>
+          <details>
+            <summary>Where does my game live?<span class="pm"></span></summary>
+            <div class="answer"><div><p>On your computer, in its own folder. Your plan, your art and your code stay with you.</p></div></div>
+          </details>
+          <details>
+            <summary>How much does it cost to make a game?<span class="pm"></span></summary>
+            <div class="answer"><div><p>You pay your model provider for what the studio uses. The studio shows what a step should cost before it starts and counts every call as it goes.</p></div></div>
+          </details>
         </div>
       </div>
-    </div>
-  </div>
+    </section>
+  </main>
 
-  <div class="section values">
-    <div class="container">
-      <div class="section-description">
-        <h4>Onigiri supports founders with:</h4>
+  <footer>
+    <div class="wrap">
+      <div class="foot-brand">
+        <a class="brand" href="/"><img src="images/logo.svg" alt="" width="26" height="26">onigiri.ai</a>
+        <p class="made">Made with <span class="heart" role="img" aria-label="love">&#9829;</span> in SG</p>
       </div>
-      <div class="row">
-        <div class="one-third column value">
-          <h2 class="value-multiplier">🧭</h2>
-          <h5 class="value-heading"><strong>Fundraising navigation</strong><br/></h5>
-          <p class="value-description"><strong>Connect with value aligned VCs via a warm intro. Onigiri will support you with 1-on-1 fundraising coaching along the way.</strong></p>
-        </div>
-        <div class="one-third column value">
-          <h2 class="value-multiplier">🔍</h2>
-          <h5 class="value-heading"><strong>Investor mapping</strong></h5>
-          <p class="value-description"><strong>Quickly shortlist VCs with a history of investments in start-ups like your own.</strong></p>
-        </div>
-        <div class="one-third column value">
-          <h2 class="value-multiplier">🤝</h2>
-          <h5 class="value-heading"><strong>Relationship management</strong></h5>
-          <p class="value-description"><strong>Manage the status of your investor leads with one simple tool.</strong></p>
-        </div>
-      </div>
+      <nav aria-label="Legal">
+        <a href="privacy_policy.html">Privacy Policy</a>
+        <a href="terms_of_service.html">Terms of Service</a>
+      </nav>
+      <p>&copy; 2026 Lantern Labs Pte. Ltd. UEN 202117064E</p>
     </div>
-  </div>
-
-  <div class="section lighten-the-load">
-    <div class="container">
-      <h4 class="section-heading">You focus on what matters to your business.<br />Let Onigiri streamline your fundraise.</h4>
-      <br/>
-      <!-- <a class="button button-primary large" href="https://beta.app.onigiri.ai/?defaultToSignUp=true">Join the Beta</a> -->
-    </div>
-  </div>
-
-  <div class="section inquiring-minds">
-    <div class="container">
-      <h3 class="section-heading">For inquiring minds</h3>
-      <div class="section-description">
-        <h5>What is "Onigiri.ai"?</h5>
-        <p>Onigiri is an intelligent investor recommendation engine, investor introduction network and a fundraising coaching service.</p>
-        <h5>Will I be connected with investors?</h5>
-        <p>Yes! We do require additional vetting for this service to ensure we are referring legitimate startups. We will not share your information to investors without your prior consent.</p>
-        <h5>I've never fundraised. Will Onigiri help me?</h5>
-        <p>We designed Onigiri for founders like yourself!</p>
-        <p>Onigiri is built with input from both first-time entrepreneurs and experienced founders, and is currently designed to serve the needs of early-stage fundraising.</p>
-        <h5>How much does Onigiri cost?</h5>
-        <p>The Onigiri platform is free of charge to use. We want to help founders succeed!</p>
-        <p>During the beta, 1-on-1 fundraising coaching sessions are offered pro-bono.</p>
-        <h5>What if I'm currently pre-product and pre-revenue?</h5>
-        <p>Onigiri is most valuable to founders soon to be raising (within the next 3 months), or have recently begun raising external capital (within the past month).</p>
-        <h5>Who has access to my data?</h5>
-        <p>Your data is yours, and it is stored securely, encrypted at rest.</p>
-        <p>If you request an investor intro, only information you give us permission to forward will be shared with investors.</p>
-        <h5>I have other questions!</h5>
-        <p>We’re here to ensure your long-term fundraising success.</p>
-        <p>Ask us anything: <a href='mai&#108;to&#58;h&#101;l&#108;&#37;6F&#64;on&#105;&#37;&#54;7ir&#105;&#46;&#97;%&#54;9'>h&#101;llo&#64;onigi&#114;&#105;&#46;a&#105;</a></p>
-      </div>
-    </div>
-  </div>
-
-  <div class="section try-onigiri">
-    <div class="container">
-      <h3 class="section-heading">Achieve fundraising confidence.</h3>
-      <br/>
-      <!-- <a class="button button-primary large" href="https://beta.app.onigiri.ai/?defaultToSignUp=true">Join the Beta</a> -->
-    </div>
-  </div>
-
-  <div class="page-footer">
-    <p>
-      Made with 🍙 in Singapore.
-      <br />
-      <a href="/privacy_policy">Privacy Policy</a> | <a href="terms_of_service">Terms of Service</a>
-      <br />
-      <p>&copy; 2022 Lantern Labs Pte. Ltd. UEN: 202117064E.</p>
-    </p>
-  </div>
+  </footer>
 
 </body>
 </html>
